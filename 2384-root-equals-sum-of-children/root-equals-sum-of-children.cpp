@@ -12,9 +12,8 @@
 class Solution {
 public:
     bool checkTree(TreeNode* root) {
-        int a= root->left->val + root->right->val ;
-     if(root->val==a) return true;
-     return false;  
+    bool a=(root->val==root->left->val + root->right->val)? true:false;
+     return a;
 
     }
 };
